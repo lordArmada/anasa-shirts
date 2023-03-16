@@ -1,0 +1,227 @@
+/**
+* ! Changing default styles of the browser
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #222;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  height: 250px;
+  width: 220px;
+}
+
+/**
+* ! Navbar STyles are here
+**/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5),
+    0px 2px 4px rgba(255, 255, 255, 0.5)
+}
+
+.cart {
+  position: relative;
+  background-color: #222;
+  color: aliceblue;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.cart:hover{
+  background-color: aliceblue;
+    color: #222;
+    font-size: 30px;
+}
+.cartC{
+  font-size: 32px;
+}
+.cartC:hover{
+  background-color: aliceblue;
+  color: #222;
+}
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: #222;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+/**
+* ! Shop items styles are here
+**/
+.shop {
+  display: grid;
+  grid-template-columns: repeat(5, 223px);
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.item {
+  border: none;
+  border-radius: 4px;
+  background-color: #222;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.5),
+}
+
+.item:hover {
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-plus-lg:hover,
+.bi-dash-lg:hover {
+  color: aliceblue;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/**
+* ! style rules for label and some buttons
+**/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: white;
+  color: #222;
+}
+
+.removeAll {
+  background-color: white;
+  color: #222;
+}
+
+.bi-x-lg {
+  color: white;
+  font-weight: bold;
+  color: #222;
+}
+
+/**
+* ! style rules for shopping-cart
+**/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+  color: aliceblue;
+}
+
+/**
+* ! style rules for cart-item
+**/
+
+.cart-item {
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  display: flex;
+}
+
+.cart-item img {
+  height: 120px;
+  width: 120px;
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
